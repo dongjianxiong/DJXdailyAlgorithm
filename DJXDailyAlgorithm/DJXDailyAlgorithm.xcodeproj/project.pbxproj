@@ -17,6 +17,11 @@
 		633A303C1D4EEFF30015A347 /* DJXDailyAlgorithmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 633A303B1D4EEFF30015A347 /* DJXDailyAlgorithmTests.m */; };
 		633A30471D4EEFF30015A347 /* DJXDailyAlgorithmUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 633A30461D4EEFF30015A347 /* DJXDailyAlgorithmUITests.m */; };
 		633A30571D4EF0D90015A347 /* DJXStack.c in Sources */ = {isa = PBXBuildFile; fileRef = 633A30551D4EF0D90015A347 /* DJXStack.c */; };
+		921AA612216EE99A004DD9FC /* LNBTree.c in Sources */ = {isa = PBXBuildFile; fileRef = 921AA611216EE99A004DD9FC /* LNBTree.c */; };
+		921AA616216F5615004DD9FC /* LNLink.c in Sources */ = {isa = PBXBuildFile; fileRef = 921AA615216F5615004DD9FC /* LNLink.c */; };
+		9250DC9322754F4700BB10F4 /* LNHeap.c in Sources */ = {isa = PBXBuildFile; fileRef = 9250DC9222754F4700BB10F4 /* LNHeap.c */; };
+		92F0B1D421C8CBA800F55FC3 /* StringTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 92F0B1D321C8CBA800F55FC3 /* StringTest.c */; };
+		92F0B1D721C8CDAD00F55FC3 /* NSString+DJXStringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F0B1D621C8CDAD00F55FC3 /* NSString+DJXStringUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +61,16 @@
 		633A30481D4EEFF30015A347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		633A30551D4EF0D90015A347 /* DJXStack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = DJXStack.c; path = Stack/DJXStack.c; sourceTree = "<group>"; };
 		633A30561D4EF0D90015A347 /* DJXStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DJXStack.h; path = Stack/DJXStack.h; sourceTree = "<group>"; };
+		921AA610216EE99A004DD9FC /* LNBTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNBTree.h; sourceTree = "<group>"; };
+		921AA611216EE99A004DD9FC /* LNBTree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LNBTree.c; sourceTree = "<group>"; };
+		921AA614216F5615004DD9FC /* LNLink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNLink.h; sourceTree = "<group>"; };
+		921AA615216F5615004DD9FC /* LNLink.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LNLink.c; sourceTree = "<group>"; };
+		9250DC9122754F4700BB10F4 /* LNHeap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNHeap.h; sourceTree = "<group>"; };
+		9250DC9222754F4700BB10F4 /* LNHeap.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LNHeap.c; sourceTree = "<group>"; };
+		92F0B1D221C8CBA800F55FC3 /* StringTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringTest.h; sourceTree = "<group>"; };
+		92F0B1D321C8CBA800F55FC3 /* StringTest.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = StringTest.c; sourceTree = "<group>"; };
+		92F0B1D521C8CDAD00F55FC3 /* NSString+DJXStringUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+DJXStringUtil.h"; sourceTree = "<group>"; };
+		92F0B1D621C8CDAD00F55FC3 /* NSString+DJXStringUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+DJXStringUtil.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +121,10 @@
 		633A301D1D4EEFF30015A347 /* DJXDailyAlgorithm */ = {
 			isa = PBXGroup;
 			children = (
+				9250DC9022754F2B00BB10F4 /* Heap */,
+				92F0B1D121C8CB8B00F55FC3 /* String */,
+				921AA613216F55F9004DD9FC /* Link */,
+				921AA60C216EE810004DD9FC /* BTree */,
 				633A30541D4EF0470015A347 /* Stack */,
 				633A30211D4EEFF30015A347 /* AppDelegate.h */,
 				633A30221D4EEFF30015A347 /* AppDelegate.m */,
@@ -150,10 +169,48 @@
 		633A30541D4EF0470015A347 /* Stack */ = {
 			isa = PBXGroup;
 			children = (
-				633A30551D4EF0D90015A347 /* DJXStack.c */,
 				633A30561D4EF0D90015A347 /* DJXStack.h */,
+				633A30551D4EF0D90015A347 /* DJXStack.c */,
 			);
 			name = Stack;
+			sourceTree = "<group>";
+		};
+		921AA60C216EE810004DD9FC /* BTree */ = {
+			isa = PBXGroup;
+			children = (
+				921AA610216EE99A004DD9FC /* LNBTree.h */,
+				921AA611216EE99A004DD9FC /* LNBTree.c */,
+			);
+			name = BTree;
+			sourceTree = "<group>";
+		};
+		921AA613216F55F9004DD9FC /* Link */ = {
+			isa = PBXGroup;
+			children = (
+				921AA614216F5615004DD9FC /* LNLink.h */,
+				921AA615216F5615004DD9FC /* LNLink.c */,
+			);
+			name = Link;
+			sourceTree = "<group>";
+		};
+		9250DC9022754F2B00BB10F4 /* Heap */ = {
+			isa = PBXGroup;
+			children = (
+				9250DC9122754F4700BB10F4 /* LNHeap.h */,
+				9250DC9222754F4700BB10F4 /* LNHeap.c */,
+			);
+			name = Heap;
+			sourceTree = "<group>";
+		};
+		92F0B1D121C8CB8B00F55FC3 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				92F0B1D221C8CBA800F55FC3 /* StringTest.h */,
+				92F0B1D321C8CBA800F55FC3 /* StringTest.c */,
+				92F0B1D521C8CDAD00F55FC3 /* NSString+DJXStringUtil.h */,
+				92F0B1D621C8CDAD00F55FC3 /* NSString+DJXStringUtil.m */,
+			);
+			name = String;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,7 +275,7 @@
 		633A30131D4EEFF30015A347 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = DJX;
+				CLASSPREFIX = LN;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = dongjianxiong;
 				TargetAttributes = {
@@ -287,11 +344,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				921AA612216EE99A004DD9FC /* LNBTree.c in Sources */,
 				633A30261D4EEFF30015A347 /* ViewController.m in Sources */,
 				633A30231D4EEFF30015A347 /* AppDelegate.m in Sources */,
 				633A302C1D4EEFF30015A347 /* DJXDailyAlgorithm.xcdatamodeld in Sources */,
+				92F0B1D421C8CBA800F55FC3 /* StringTest.c in Sources */,
+				92F0B1D721C8CDAD00F55FC3 /* NSString+DJXStringUtil.m in Sources */,
 				633A30201D4EEFF30015A347 /* main.m in Sources */,
+				921AA616216F5615004DD9FC /* LNLink.c in Sources */,
 				633A30571D4EF0D90015A347 /* DJXStack.c in Sources */,
+				9250DC9322754F4700BB10F4 /* LNHeap.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,7 +493,6 @@
 		633A304C1D4EEFF30015A347 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DJXDailyAlgorithm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.umeng.DJXDailyAlgorithm;
@@ -442,7 +503,6 @@
 		633A304D1D4EEFF30015A347 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DJXDailyAlgorithm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.umeng.DJXDailyAlgorithm;
@@ -517,6 +577,7 @@
 				633A304D1D4EEFF30015A347 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		633A304E1D4EEFF30015A347 /* Build configuration list for PBXNativeTarget "DJXDailyAlgorithmTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +586,7 @@
 				633A30501D4EEFF30015A347 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		633A30511D4EEFF30015A347 /* Build configuration list for PBXNativeTarget "DJXDailyAlgorithmUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +595,7 @@
 				633A30531D4EEFF30015A347 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

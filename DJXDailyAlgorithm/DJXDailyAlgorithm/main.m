@@ -2,7 +2,7 @@
 //  main.m
 //  DJXDailyAlgorithm
 //
-//  Created by umeng on 16/8/1.
+//  Created by Lenny on 16/8/1.
 //  Copyright © 2016年 dongjianxiong. All rights reserved.
 //
 
@@ -25,9 +25,9 @@ int main(int argc, char * argv[]) {
 ////        printf("top--%d",*(stack.top));
 //        printf("%d",elemType);
 //    }
-    TraverseStack(&stack);
-    DestroyStack(&stack);
-    TraverseStack(&stack);
+//    TraverseStack(&stack);
+//    DestroyStack(&stack);
+//    TraverseStack(&stack);
 
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
